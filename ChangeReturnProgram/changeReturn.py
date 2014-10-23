@@ -72,10 +72,13 @@ def return_coins(difference):
         pennies += 1
         difference -= 0.01
 
-    return quarters, dimes, nickels, pennies
+    return quarters * 0.25, dimes * 0.1, nickels * 0.05, pennies * 0.01
 
-def add_bills(bills):
-    return bills[0] + bills[1] + bills[2] + bills[3] + bills[4] + bills[5]
+def add_money(money):
+    total = 0
+    for denomination in money:
+        total += denomination
+    return total
 
 
 def main():
@@ -84,8 +87,11 @@ def main():
     if is_payment_enough(cost, payment):
         difference = calc_difference(cost, payment)
         bills = return_bills(difference)
-        bills_total = add_bills(bills)
-        print(bills)
-        print(bills_total)
+        bills_total = add_money(bills)
+        left_over_from_bills = difference - bills_total
+        coins = return_coins(left_over_from_bills)
+        coins_total = add_money(coins)
+        total_change_due = bills_total + coins_total
+        print("You're total change is: ", total_change_due)
 
 main()

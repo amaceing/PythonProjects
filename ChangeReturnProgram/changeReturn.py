@@ -21,7 +21,9 @@ def return_bills(difference):
     fifties = 0
     twenties = 0
     tens = 0
+    fives = 0
     ones = 0
+
     while difference >= 100:
         hundreds += 1
         difference -= 100
@@ -38,11 +40,15 @@ def return_bills(difference):
         tens += 1
         difference -= 10
 
+    while difference >= 5:
+        fives += 1
+        difference -= 5
+
     while difference >= 1:
         ones += 1
         difference -= 1
 
-    return hundreds, fifties, twenties, tens, ones
+    return hundreds * 100, fifties * 50, twenties * 20, tens * 10, fives * 5, ones
 
 def return_coins(difference):
     quarters = 0
@@ -68,14 +74,18 @@ def return_coins(difference):
 
     return quarters, dimes, nickels, pennies
 
+def add_bills(bills):
+    return bills[0] + bills[1] + bills[2] + bills[3] + bills[4] + bills[5]
+
+
 def main():
     cost = enter_cost_of_item()
     payment = enter_payment_amount()
     if is_payment_enough(cost, payment):
         difference = calc_difference(cost, payment)
         bills = return_bills(difference)
-        change = return_coins(left_over_from_bills)
+        bills_total = add_bills(bills)
         print(bills)
-        print(change)
+        print(bills_total)
 
 main()

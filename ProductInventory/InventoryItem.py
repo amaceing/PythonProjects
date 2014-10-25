@@ -24,7 +24,7 @@ class InventoryItem:
     def quantity(self):
         return self._quantity
 
-    def getValue(self):
+    def get_value(self):
         return self._price * self._quantity
 
     def __str__(self):

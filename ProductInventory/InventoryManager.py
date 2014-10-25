@@ -30,3 +30,7 @@ class InventoryManager:
 
     def view_inventory(self):
         print(self.items_list)
+
+    def __str__(self):
+        for item in self.items_list:
+            print(item)

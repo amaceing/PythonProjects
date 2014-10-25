@@ -28,4 +28,4 @@ class InventoryItem:
         return self._price * self._quantity
 
     def __str__(self):
-        return self._name + ": " + self._price
+        return self._name + ": $" + str(self._price)

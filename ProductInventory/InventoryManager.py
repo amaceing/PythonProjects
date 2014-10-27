@@ -27,10 +27,3 @@ class InventoryManager:
     def find_item(self, item):
         if item in self.items_list:
             return item
-
-    def view_inventory(self):
-        print(self.items_list)
-
-    def __str__(self):
-        for item in self.items_list:
-            print(item)

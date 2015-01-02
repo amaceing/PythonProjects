@@ -11,7 +11,7 @@ def get_hours_from_each_day():
             hours = input("Enter your hours from day #{}: ".format(day))
             week_hours.append(hours)
         hours_list.append(week_hours)
-    return (hours_list)
+    return hours_list
 
 def get_hours_from_week():
     week_one_hours = input("Enter your hours from week 1: ")

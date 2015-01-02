@@ -26,7 +26,7 @@
       <file leaf-file-name="changeReturn.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/changeReturn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.717608" vertical-offset="627" max-vertical-offset="1530">
+            <state vertical-scroll-proportion="1.4119601" vertical-offset="0" max-vertical-offset="1530">
               <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
               <folding />
             </state>
@@ -281,13 +281,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="272" y="34" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39957035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -326,6 +326,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/changeReturn.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1530">
+          <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changeReturn.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="934" max-vertical-offset="1530">
           <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
           <folding />
@@ -334,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/changeReturn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.717608" vertical-offset="627" max-vertical-offset="1530">
+        <state vertical-scroll-proportion="1.4119601" vertical-offset="0" max-vertical-offset="1530">
           <caret line="85" column="36" selection-start-line="85" selection-start-column="36" selection-end-line="85" selection-end-column="36" />
           <folding />
         </state>

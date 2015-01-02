@@ -19,37 +19,34 @@ def get_hours_from_week():
     return week_one_hours, week_two_hours
 
 def split_hours_and_add(hours_list):
-    week_one_hours = hours_list[0]
-    week_two_hours = hours_list[1]
+    hours_total = 0
+    minutes_total = 0
     for weeks in hours_list:
-        hours_total = 0
-        week_hours = weeks
         for day_hours in weeks:
             hours_total += add_hours_from_list(day_hours)
-
-        print(hours_total)
-
-
-    #week_one_hours_split = week_one_hours.split(':')
-    #week_two_hours_split = week_two_hours.split(':')
-    #added_hours = int(week_one_hours_split[0]) + int(week_two_hours_split[0])
-    #added_minutes = int(week_one_hours_split[1]) + int(week_two_hours_split[1])
-    #converted_time = convert_minutes(added_minutes)
-    #added_hours += converted_time[0]
-    #added_minutes = converted_time[1]
-    return 1
+            minutes_total += add_minutes_from_list(day_hours)
+    minutes_total = convert_minutes(minutes_total)
+    hours_total += minutes_total[0]
+    minutes_total = minutes_total[1]
+    return hours_total, minutes_total
 
 def add_hours_from_list(hour_string):
     hour = int(hour_string[0])
     return hour
 
+def add_minutes_from_list(hour_string):
+    minutes = int(hour_string[2:])
+    return minutes
+
 def convert_minutes(mins):
+    additional_hours = 0
     if mins >= 60:
-        mins -= 60
-        hours = 1
+        while mins >= 60:
+            mins -= 60
+            additional_hours += 1
     else:
         return mins
-    return hours, mins
+    return additional_hours, mins
 
 def hours_to_decimal(hours, minutes):
     total = hours + (minutes / 60.0)
@@ -70,8 +67,8 @@ def main():
     hours_list = get_hours_from_each_day()
     print(hours_list)
     final_total = split_hours_and_add(hours_list)
-    #total_hours = hours_to_decimal(int(final_total[0]), int(final_total[1]))
-    #write_hours_to_file(int(final_total[0]), int(final_total[1]), total_hours)
-    #print("Wrote hours to file")
+    total_hours = hours_to_decimal(int(final_total[0]), int(final_total[1]))
+    write_hours_to_file(int(final_total[0]), int(final_total[1]), total_hours)
+    print("Wrote hours to file")
 
 main()

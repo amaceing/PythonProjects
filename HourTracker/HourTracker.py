@@ -25,18 +25,18 @@ def split_hours_and_add(hours_list):
         for day_hours in weeks:
             hours_total += add_hours_from_list(day_hours)
             minutes_total += add_minutes_from_list(day_hours)
-    minutes_total = convert_minutes(minutes_total)
-    hours_total += minutes_total[0]
-    minutes_total = minutes_total[1]
+    converted_minutes_to_hours = convert_minutes(minutes_total)
+    hours_total += converted_minutes_to_hours[0]
+    minutes_total = converted_minutes_to_hours[1]
     return hours_total, minutes_total
 
 def add_hours_from_list(hour_string):
-    hour = int(hour_string[0])
-    return hour
+    hour = hour_string.split(':')
+    return int(hour[0])
 
 def add_minutes_from_list(hour_string):
-    minutes = int(hour_string[2:])
-    return minutes
+    minutes = hour_string.split(':')
+    return int(minutes[1])
 
 def convert_minutes(mins):
     additional_hours = 0

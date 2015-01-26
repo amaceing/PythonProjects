@@ -1,4 +1,0 @@
-Hour Tracker
-2015-01-02
-Your time for 2 weeks is 22:20
-Your hours in decimal: 22.33

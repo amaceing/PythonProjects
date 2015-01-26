@@ -2,6 +2,7 @@ __author__ = 'anthonymace'
 
 import datetime
 
+
 def get_hours_from_each_day():
     hours_list = []
     for week in range(1, 3):
@@ -13,10 +14,12 @@ def get_hours_from_each_day():
         hours_list.append(week_hours)
     return hours_list
 
+
 def get_hours_from_week():
     week_one_hours = input("Enter your hours from week 1: ")
     week_two_hours = input("Enter your hours from week 2: ")
     return week_one_hours, week_two_hours
+
 
 def split_hours_and_add(hours_list):
     hours_total = 0
@@ -30,13 +33,16 @@ def split_hours_and_add(hours_list):
     minutes_total = converted_minutes_to_hours[1]
     return hours_total, minutes_total
 
+
 def add_hours_from_list(hour_string):
     hour = hour_string.split(':')
     return int(hour[0])
 
+
 def add_minutes_from_list(hour_string):
     minutes = hour_string.split(':')
     return int(minutes[1])
+
 
 def convert_minutes(mins):
     additional_hours = 0
@@ -48,9 +54,11 @@ def convert_minutes(mins):
         return mins
     return additional_hours, mins
 
+
 def hours_to_decimal(hours, minutes):
     total = hours + (minutes / 60.0)
     return total
+
 
 def write_hours_to_file(hours, minutes, total_hours):
     today = datetime.date.today()

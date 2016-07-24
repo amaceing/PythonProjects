@@ -10,3 +10,19 @@ Your hours in decimal: 3.17
 Your time for 2 weeks is 12:10
 Your hours in decimal: 12.17
 
+2015-02-02
+Your time for 2 weeks is 41:13
+Your hours in decimal: 41.22
+
+2015-02-16
+Your time for 2 weeks is 35:12
+Your hours in decimal: 35.20
+
+2015-03-02
+Your time for 2 weeks is 42:0
+Your hours in decimal: 42.00
+
+2015-03-16
+Your time for 2 weeks is 48:35
+Your hours in decimal: 48.58
+

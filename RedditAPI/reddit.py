@@ -1,4 +1,9 @@
 import praw
-r = praw.Reddit(user_agent='my_cool_application')
-submissions = r.get_subreddit('opensource').get_hot(limit=5)
+
+redditUser = 'codeycoderson'
+userSubreddit = 'learnprogramming'
+subredditSubmissionLimit = 10
+
+response = praw.Reddit(user_agent=redditUser)
+submissions = r.get_subreddit(userSubreddit).get_hot(limit=subredditSubmissionLimit)
 [str(x) for x in submissions]

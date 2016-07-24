@@ -1,12 +1,17 @@
-import praw
+import sys
+sys.path.insert(0, '/requests/requests')
+
+import requests
 import config
+import json
 
-print(config.credentials['client'])
+auth_API_call = 'https://www.reddit.com/api/v1/authorize?'
+client_id = 'client_id' + config.credentials['client_id']
+user_agent = {'user_agent': 'mace:pythonprojecsredditAPI:v1.0 (by /u/codeycoderson)'}
+redirect_uri = config.credentials['redirect_uri']
+scope = 'identity'
 
-redditUser = 'codeycoderson'
-userSubreddit = 'learnprogramming'
-subredditSubmissionLimit = 10
+response = requests.get(r'http://www.reddit.com/user/codeycoderson/comments/.json', headers = user_agent)
+responseData = response.json()
 
-response = praw.Reddit(user_agent=redditUser)
-submissions = r.get_subreddit(userSubreddit).get_hot(limit=subredditSubmissionLimit)
-[str(x) for x in submissions]
+print(responseData)

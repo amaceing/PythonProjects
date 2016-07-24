@@ -1,4 +1,7 @@
 import praw
+import config
+
+print(config.credentials['client'])
 
 redditUser = 'codeycoderson'
 userSubreddit = 'learnprogramming'

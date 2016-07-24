@@ -1,0 +1,1 @@
+credentials = dict (client = 'Q02Kt3Alc7GPM2iLVf_-i1wVTOA', name = 'RedditAPI')
